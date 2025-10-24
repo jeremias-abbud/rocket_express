@@ -1,5 +1,4 @@
 import React from "react";
-import { MadeWithDyad } from "@/components/made-with-dyad";
 
 interface FooterProps {
   id: string;
@@ -15,7 +14,6 @@ const Footer: React.FC<FooterProps> = ({ id }) => {
           className="h-10 mx-auto mb-4"
         />
         <p className="mb-2">&copy; 2024 Rocket Express. Todos os direitos reservados.</p>
-        <MadeWithDyad />
       </div>
     </footer>
   );
