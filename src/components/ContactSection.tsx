@@ -34,7 +34,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id }) => {
   return (
     <section id={id} className="py-20 bg-gray-950 text-white">
       <div className="container mx-auto px-6 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-red-500">Dúvidas Frequentes & CTA</h2>
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-red-500">Entre em Contato</h2>
         <p className="text-lg md:text-xl mb-12 text-gray-300 max-w-4xl mx-auto">
           SUA DECISÃO MAIS LUCRATIVA É AGORA. SEM MENSALIDADE. SEM PEGADINHAS. VOCÊ SÓ PAGA PELA ENTREGA. Não perca mais tempo repassando sua margem de lucro. Cadastre sua empresa em minutos e comece a economizar e ter controle total sobre seu delivery imediatamente com a Rocket Express.
         </p>
