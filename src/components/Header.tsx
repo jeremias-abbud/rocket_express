@@ -27,7 +27,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-90 backdrop-blur-sm py-4 px-6 border-b border-gray-800">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-90 backdrop-blur-sm py-4 px-6 border-b border-gray-800 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="#inicio" className="flex items-center" onClick={handleNavLinkClick}>
           <img

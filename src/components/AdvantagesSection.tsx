@@ -52,14 +52,14 @@ const AdvantagesSection: React.FC<AdvantagesSectionProps> = ({ id }) => {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="border-b border-gray-800 animate-fade-in-slide-up"
+                className="border-b border-gray-800 data-[state=open]:border-red-500 transition-all duration-300 animate-fade-in-slide-up"
                 style={{ animationDelay: `${0.4 + index * 0.1}s` }}
               >
                 <AccordionTrigger className="text-xl md:text-2xl text-left hover:no-underline text-red-400 hover:text-red-500 transition-colors flex items-center p-4">
                   <CheckCircle className="inline-block mr-3 text-red-500 flex-shrink-0" size={24} />
                   {advantage.title}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-300 text-base md:text-lg text-left p-4 bg-gray-900 border-t border-gray-800">
+                <AccordionContent className="text-gray-300 text-base md:text-lg text-left p-4 bg-gray-900 border-t border-gray-800 data-[state=open]:border-red-500 transition-all duration-300">
                   {advantage.description}
                 </AccordionContent>
               </AccordionItem>

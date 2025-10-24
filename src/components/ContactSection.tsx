@@ -52,7 +52,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id }) => {
             </p>
             <p className="text-lg mb-4 flex items-start">
               <MapPin className="mr-3 text-red-500 flex-shrink-0" size={24} />
-              Rua da Logística, 123, Cidade Expressa - CE
+              Rua Exemplo, 123, Curitiba - Paraná
             </p>
             <p className="text-gray-400 mt-8">
               Estamos prontos para atender suas necessidades de transporte e logística.

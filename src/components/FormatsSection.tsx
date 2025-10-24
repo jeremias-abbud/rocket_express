@@ -36,7 +36,7 @@ const FormatsSection: React.FC<FormatsSectionProps> = ({ id }) => {
           {formats.map((format, index) => (
             <Card
               key={index}
-              className="bg-gray-900 border-gray-800 text-white shadow-lg hover:shadow-red-500/50 transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 animate-fade-in-slide-up"
+              className="bg-gray-900 border-gray-800 text-white shadow-lg hover:shadow-red-500/50 hover:border-red-500 transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 animate-fade-in-slide-up"
               style={{ animationDelay: `${0.4 + index * 0.2}s` }}
             >
               <CardHeader>
