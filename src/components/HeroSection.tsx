@@ -26,7 +26,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ id }) => {
         </p>
         <Button
           asChild
-          className="bg-red-600 hover:bg-red-700 text-white text-lg px-8 py-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 animate-fade-in-slide-up animate-pulse-glow"
+          className="bg-red-600 hover:bg-red-700 text-white text-lg px-6 py-4 md:px-8 md:py-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 animate-fade-in-slide-up animate-pulse-glow"
           style={{ animationDelay: '0.6s' }}
         >
           <a href="#contato">QUERO CADASTRAR MINHA EMPRESA E LUCRAR MAIS</a>
