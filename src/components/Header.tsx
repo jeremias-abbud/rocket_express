@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -29,13 +28,14 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-black bg-opacity-90 backdrop-blur-sm py-4 px-6 border-b border-gray-800 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="#inicio" className="flex items-center" onClick={handleNavLinkClick}>
+        {/* Alterado de Link para <a> para melhor rolagem para a âncora */}
+        <a href="#inicio" className="flex items-center" onClick={handleNavLinkClick}>
           <img
             src="/images/LOGO ROCKET EXPRESS BRANCA.png"
             alt="Rocket Express Logo"
             className="h-8 md:h-10"
           />
-        </Link>
+        </a>
 
         {/* Desktop Navigation */}
         <NavigationMenu className="hidden md:flex">

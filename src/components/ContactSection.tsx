@@ -98,7 +98,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id }) => {
               </div>
               <Button
                 type="submit"
-                className="w-full bg-red-600 hover:bg-red-700 text-white text-base lg:text-lg py-2 lg:py-3 rounded-md transition-colors duration-300 shadow-md hover:shadow-red-500/50 whitespace-normal"
+                className="w-full bg-red-600 hover:bg-red-700 text-white text-base lg:text-lg py-3 lg:py-4 rounded-md transition-colors duration-300 shadow-md hover:shadow-red-500/50 whitespace-normal"
               >
                 QUERO CADASTRAR MINHA EMPRESA E LUCRAR MAIS
               </Button>
