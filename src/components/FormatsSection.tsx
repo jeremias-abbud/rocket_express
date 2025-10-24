@@ -25,15 +25,20 @@ const formats = [
 
 const FormatsSection: React.FC<FormatsSectionProps> = ({ id }) => {
   return (
-    <section id={id} className="py-20 bg-gray-950 text-white">
-      <div className="container mx-auto px-6 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-red-500">Vantagem Competitiva e Modelos de Entrega</h2>
-        <p className="text-lg md:text-xl mb-12 text-gray-300 max-w-4xl mx-auto">
+    <section id={id} className="py-20 bg-gray-950 text-white relative overflow-hidden">
+      <div className="absolute inset-0 bg-grid-pattern opacity-10"></div> {/* Adiciona um padrão de fundo sutil */}
+      <div className="container mx-auto px-6 text-center relative z-10">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-red-500 animate-fade-in-slide-up">Vantagem Competitiva e Modelos de Entrega</h2>
+        <p className="text-lg md:text-xl mb-12 text-gray-300 max-w-4xl mx-auto animate-fade-in-slide-up" style={{ animationDelay: '0.2s' }}>
           A DECISÃO INTELIGENTE: LUCRE ATÉ 50% MAIS E TENHA LOGÍSTICA FEITA PARA VOCÊ. Chega de perder margem. Se você vende em Marketplaces, a Rocket não apenas corta seu custo de entrega em 30% a 50%, como também lhe entrega o controle operacional que o seu negócio implora. Tome as rédeas do seu delivery com as únicas modalidades 100% flexíveis do mercado. Sua vida de empresário muito mais fácil e lucrativa:
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {formats.map((format, index) => (
-            <Card key={index} className="bg-gray-900 border-gray-800 text-white shadow-lg hover:shadow-red-500/30 transition-shadow duration-300">
+            <Card
+              key={index}
+              className="bg-gray-900 border-gray-800 text-white shadow-lg hover:shadow-red-500/50 transition-all duration-300 transform hover:-translate-y-2 hover:scale-102 animate-fade-in-slide-up"
+              style={{ animationDelay: `${0.4 + index * 0.2}s` }}
+            >
               <CardHeader>
                 <img
                   src={format.image}

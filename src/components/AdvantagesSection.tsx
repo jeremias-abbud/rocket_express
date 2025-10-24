@@ -42,19 +42,24 @@ const AdvantagesSection: React.FC<AdvantagesSectionProps> = ({ id }) => {
   return (
     <section id={id} className="py-20 bg-black text-white">
       <div className="container mx-auto px-6 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-red-500">O Pacote de Vantagens</h2>
-        <p className="text-lg md:text-xl mb-12 text-gray-300 max-w-4xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-red-500 animate-fade-in-slide-up">O Pacote de Vantagens</h2>
+        <p className="text-lg md:text-xl mb-12 text-gray-300 max-w-4xl mx-auto animate-fade-in-slide-up" style={{ animationDelay: '0.2s' }}>
           O QUE VOCÊ GANHA AO MIGRAR PARA A ROCKET EXPRESS.
         </p>
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="w-full">
             {advantages.map((advantage, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border-b border-gray-800">
-                <AccordionTrigger className="text-xl md:text-2xl text-left hover:no-underline text-red-400 hover:text-red-500 transition-colors">
-                  <CheckCircle className="inline-block mr-3 text-red-500" size={24} />
+              <AccordionItem
+                key={index}
+                value={`item-${index}`}
+                className="border-b border-gray-800 animate-fade-in-slide-up"
+                style={{ animationDelay: `${0.4 + index * 0.1}s` }}
+              >
+                <AccordionTrigger className="text-xl md:text-2xl text-left hover:no-underline text-red-400 hover:text-red-500 transition-colors flex items-center p-4">
+                  <CheckCircle className="inline-block mr-3 text-red-500 flex-shrink-0" size={24} />
                   {advantage.title}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-300 text-base md:text-lg text-left p-4">
+                <AccordionContent className="text-gray-300 text-base md:text-lg text-left p-4 bg-gray-900 border-t border-gray-800">
                   {advantage.description}
                 </AccordionContent>
               </AccordionItem>
