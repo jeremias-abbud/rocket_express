@@ -34,7 +34,10 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id }) => {
   return (
     <section id={id} className="py-20 bg-gray-950 text-white">
       <div className="container mx-auto px-6 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-12 text-red-500">Entre em Contato</h2>
+        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-red-500">Dúvidas Frequentes & CTA</h2>
+        <p className="text-lg md:text-xl mb-12 text-gray-300 max-w-4xl mx-auto">
+          SUA DECISÃO MAIS LUCRATIVA É AGORA. SEM MENSALIDADE. SEM PEGADINHAS. VOCÊ SÓ PAGA PELA ENTREGA. Não perca mais tempo repassando sua margem de lucro. Cadastre sua empresa em minutos e comece a economizar e ter controle total sobre seu delivery imediatamente com a Rocket Express.
+        </p>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Informações de Contato */}
           <div className="text-left bg-gray-900 p-8 rounded-lg shadow-lg border border-gray-800">
@@ -97,7 +100,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id }) => {
                 type="submit"
                 className="w-full bg-red-600 hover:bg-red-700 text-white text-lg py-3 rounded-md transition-colors duration-300"
               >
-                Enviar Mensagem
+                QUERO CADASTRAR MINHA EMPRESA E LUCRAR MAIS
               </Button>
             </form>
           </div>

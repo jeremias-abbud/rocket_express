@@ -19,16 +19,16 @@ const HeroSection: React.FC<HeroSectionProps> = ({ id }) => {
       </div>
       <div className="relative z-10 p-6 max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-up">
-          Rocket Express: Sua Entrega Rápida e Confiável
+          PARE DE PERDER LUCRO. ASSUMA O CONTROLE TOTAL DAS SUAS ENTREGAS.
         </h1>
         <p className="text-lg md:text-xl mb-8 animate-fade-in-up delay-200">
-          Soluções logísticas inovadoras para o seu negócio, com agilidade e segurança em cada envio.
+          O seu negócio merece mais lucratividade. A Rocket Express transforma a logística de um custo alto em sua vantagem competitiva. Somos a plataforma que conecta sua empresa a uma rede de entregadores autônomos, focada em segurança, agilidade e, o mais importante, na sua economia.
         </p>
         <Button
           asChild
           className="bg-red-600 hover:bg-red-700 text-white text-lg px-8 py-6 rounded-full shadow-lg transition-all duration-300 transform hover:scale-105 animate-fade-in-up delay-400"
         >
-          <a href="#formatos">Conheça Nossos Serviços</a>
+          <a href="#contato">QUERO CADASTRAR MINHA EMPRESA E LUCRAR MAIS</a>
         </Button>
       </div>
     </section>
