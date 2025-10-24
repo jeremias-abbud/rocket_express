@@ -11,9 +11,9 @@ const Footer: React.FC<FooterProps> = ({ id }) => {
         <img
           src="/images/LOGO ROCKET EXPRESS BRANCA.png"
           alt="Rocket Express Logo"
-          className="h-10 mx-auto mb-4"
+          className="h-8 sm:h-10 mx-auto mb-4"
         />
-        <p className="mb-2">&copy; 2024 Rocket Express. Todos os direitos reservados.</p>
+        <p className="text-sm sm:text-base mb-2">&copy; 2024 Rocket Express. Todos os direitos reservados.</p>
       </div>
     </footer>
   );
