@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Phone, MapPin } from "lucide-react";
-import { showSuccess, showError } from "@/utils/toast";
+import { Mail, Phone, MapPin } from "lucide-react"; // Removido Whatsapp, usando Phone
+import { showError } from "@/utils/toast";
 
 interface ContactSectionProps {
   id: string;
@@ -22,9 +22,12 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id }) => {
       return;
     }
 
-    // Redireciona para o link de cadastro
-    window.location.href = "https://acesso.rocketexpress.com.br/Empresa/Cadastrar?codigo=ROCKETEXPRESS";
-    // showSuccess("Seu e-mail foi preparado! Por favor, envie-o através do seu cliente de e-mail."); // Removido, pois não estamos mais enviando e-mail
+    const whatsappNumber = "554195226184"; // Número sem o '+'
+    const prefilledMessage = `Olá, meu nome é ${name} e meu email é ${email}. Tenho uma mensagem para vocês: ${message}`;
+    const encodedMessage = encodeURIComponent(prefilledMessage);
+    
+    window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, "_blank");
+
     setName("");
     setEmail("");
     setMessage("");
@@ -46,8 +49,8 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id }) => {
               contato@rocketexpress.com.br
             </p>
             <p className="text-lg mb-4 flex items-center">
-              <Phone className="mr-3 text-red-500" size={24} />
-              (XX) XXXX-XXXX
+              <Phone className="mr-3 text-red-500" size={24} /> {/* Usando Phone para o WhatsApp */}
+              +55 (41) 9522-6184
             </p>
             <p className="text-lg mb-4 flex items-start">
               <MapPin className="mr-3 text-red-500 flex-shrink-0" size={24} />
@@ -99,7 +102,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id }) => {
                 type="submit"
                 className="w-full bg-red-600 hover:bg-red-700 text-white text-base lg:text-lg py-3 lg:py-4 rounded-md transition-colors duration-300 shadow-md hover:shadow-red-500/50 whitespace-normal"
               >
-                QUERO CADASTRAR MINHA EMPRESA E LUCRAR MAIS
+                ENVIAR MENSAGEM VIA WHATSAPP
               </Button>
             </form>
           </div>
