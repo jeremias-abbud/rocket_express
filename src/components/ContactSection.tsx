@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { Mail, Phone, MapPin } from "lucide-react"; // Removido Whatsapp, usando Phone
+import { Mail, Phone, MapPin } from "lucide-react";
 import { showError } from "@/utils/toast";
 
 interface ContactSectionProps {
@@ -49,7 +49,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id }) => {
               contato@rocketexpress.com.br
             </p>
             <p className="text-lg mb-4 flex items-center">
-              <Phone className="mr-3 text-red-500" size={24} /> {/* Usando Phone para o WhatsApp */}
+              <Phone className="mr-3 text-red-500" size={24} />
               +55 (41) 9522-6184
             </p>
             <p className="text-lg mb-4 flex items-start">
@@ -102,7 +102,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id }) => {
                 type="submit"
                 className="w-full bg-red-600 hover:bg-red-700 text-white text-base lg:text-lg py-3 lg:py-4 rounded-md transition-colors duration-300 shadow-md hover:shadow-red-500/50 whitespace-normal"
               >
-                ENVIAR MENSAGEM VIA WHATSAPP
+                CADASTRAR MINHA EMPRESA
               </Button>
             </form>
           </div>
