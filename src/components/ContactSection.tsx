@@ -22,10 +22,9 @@ const ContactSection: React.FC<ContactSectionProps> = ({ id }) => {
       return;
     }
 
-    const subject = encodeURIComponent(`Contato via site de ${name}`);
-    const body = encodeURIComponent(`Nome: ${name}\nEmail: ${email}\n\nMensagem:\n${message}`);
-    window.location.href = `mailto:contato@rocketexpress.com.br?subject=${subject}&body=${body}`;
-    showSuccess("Seu e-mail foi preparado! Por favor, envie-o através do seu cliente de e-mail.");
+    // Redireciona para o link de cadastro
+    window.location.href = "https://acesso.rocketexpress.com.br/Empresa/Cadastrar?codigo=ROCKETEXPRESS";
+    // showSuccess("Seu e-mail foi preparado! Por favor, envie-o através do seu cliente de e-mail."); // Removido, pois não estamos mais enviando e-mail
     setName("");
     setEmail("");
     setMessage("");

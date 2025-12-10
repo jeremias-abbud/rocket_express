@@ -18,7 +18,7 @@ const slides = [
     description:
       "O seu negócio merece mais lucratividade. A Rocket Express transforma a logística de um custo alto em sua vantagem competitiva. Somos a plataforma que conecta sua empresa a uma rede de entregadores autônomos, focada em segurança, agilidade e, o mais importante, na sua economia.",
     buttonText: "QUERO CADASTRAR MINHA EMPRESA E LUCRAR MAIS",
-    buttonHref: "#contato",
+    buttonHref: "https://acesso.rocketexpress.com.br/Empresa/Cadastrar?codigo=ROCKETEXPRESS",
     backgroundImage: "/images/Gemini_Generated_Image_2enjmi2enjmi2enj.webp",
   },
   {
@@ -26,7 +26,7 @@ const slides = [
     description:
       "Esta é uma solução de logística com alta tecnologia criada para dar ao seu comércio o controle total das suas entregas. O sistema usa algoritmos inteligentes para calcular as rotas mais rápidas e distribuir pedidos de forma otimizada, garantindo entregas mais velozes e a redução de custos. Oferecendo monitoramento em tempo real do pedido, você eleva a satisfação do cliente e constrói um serviço de delivery mais eficiente e lucrativo para o seu negócio.",
     buttonText: "QUERO CADASTRAR MINHA EMPRESA E LUCRAR MAIS",
-    buttonHref: "#contato",
+    buttonHref: "https://acesso.rocketexpress.com.br/Empresa/Cadastrar?codigo=ROCKETEXPRESS",
     backgroundImage: "/images/OKR0RO1-1-1024x619.webp",
   },
 ];
